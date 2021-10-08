@@ -1,6 +1,5 @@
 html,body{
-    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-    font-family: "Varela Round";
+    font-family: 'Varela Round', sans-serif;
     margin: 0px;
 }
 
@@ -8,8 +7,8 @@ html,body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .card   {
@@ -21,20 +20,53 @@ html,body{
     background-color: #FBFBFB;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     min-width: 30%;
-    min-height: 20%;
+    min-height: 22%;
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap column;
     align-items: center;
     justify-content: space-between;
 }
 
-.user-input {
-    width: 75%;
-    border: 0, 0, 0, 0;
+.header{
+    margin-bottom: 0;
 }
 
-.login-background{
-    background-color: #5865F2;
+.input-framework {
+    margin: 10px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-evenly;
+}
+
+::placeholder {
+    color: #808080;
+    background-color: #FBFBFB;
+}
+
+.input {
+    font-family: 'Varela Round', sans-serif;
+    width: 10vw;
+    margin: 10px;
+    flex-wrap: wrap;
+    outline: 0;
+    border-width: 0 0;
+    border-bottom: 2px solid #D1D1D1;
+}
+
+.bottom{
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 10px;
+    background-color: #1390DE;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 10vw;
     padding: 10px;
-    color: #FFFFFF;
+    color: #FBFBFB;
+}
+
+.bottom:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    transform: scale(1.1);
 }
